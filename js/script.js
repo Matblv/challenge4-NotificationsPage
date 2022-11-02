@@ -45,7 +45,7 @@ notifications.forEach(e => {
 
       <div class="notificationTextContainer">
         <div class="notificationText ${e.imgProp}">
-          <span id="user" class="notificationText">${e.user} </span>${e.noti}
+          <span id="user" class="notificationText userHover">${e.user} </span>${e.noti}
           
           <span class="notificationText post">${e.post}</span>
           <span class="notificationText group">${e.group}</span>
