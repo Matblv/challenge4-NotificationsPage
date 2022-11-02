@@ -1,0 +1,167 @@
+/* font-family: 'Plus Jakarta Sans', sans-serif; 500-800 */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+
+    --white: hsl(0, 0%, 100%);
+    --veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --lightGrayishBlue1: hsl(211, 68%, 94%);
+    --lightGrayishBlue2: hsl(205, 33%, 90%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --DarkGrayishBlue: hsl(219, 12%, 42%);
+    --VeryDarkBlue: hsl(224, 21%, 14%);
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+body {
+    font-family: Plus Jakarta Sans;
+    background-color: var(--white);
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 3.8rem;
+    grid-template-columns: 8rem 1fr 2fr;
+    align-items: center;
+}
+
+.headerTitle {
+    margin-left: 15px;
+}
+
+.headerCounting {
+    font-size: 14px;
+
+    width: 30px;
+    height: 23px;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--blue);
+    color: white;
+}
+
+button {
+    text-align: end;
+    margin-right: 15px;
+
+    background: transparent;
+    border: none;
+    color: var(--DarkGrayishBlue);
+    cursor: pointer;
+}
+
+.notification {
+    padding: 1rem;
+    margin: 1rem;
+
+    display: flex;
+
+    max-width: 600px;
+    cursor: pointer;
+}
+
+.unread {
+    background-color: var(--veryLightGrayishBlue);
+}
+
+.notificationTextContainer {
+    margin-left: 10px;
+    position: relative;
+}
+
+.notificationText {
+    font-size: 14px;
+    color: var(--DarkGrayishBlue);
+}
+
+#user {
+    font-weight: 800;
+    color: black;
+}
+
+.post {
+    font-weight: 800;
+    color: hsla(224, 21%, 14%, 0.7);
+}
+
+.group {
+    font-weight: 800;
+    color: var(--blue);
+}
+
+.imageNotif {
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.marginRight {
+    margin-right: 30px;
+}
+
+.message {
+    color: var(--DarkGrayishBlue);
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+    border: var(--lightGrayishBlue2) 1px solid;
+    font-size: 14px;
+    max-width: 500px;
+}
+
+#time {
+    color: var(--DarkGrayishBlue);
+    position: relative;
+}
+
+.unreadDot {
+    max-height: 8px;
+    max-width: 8px;
+    border-radius: 100%;
+    margin-left: 4px;
+
+    opacity: 0;
+}
+
+.userProfilePicture {
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+
+    section {
+        max-width: 730px;
+    }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
